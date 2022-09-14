@@ -1,0 +1,159 @@
+* {
+    padding: 100;
+    margin: 0;
+}
+
+
+.menu{
+    background: rgb(184, 112, 84);  
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+
+  
+  .menu  a {
+      
+      
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      transition: 1s ease-out all;
+  }
+  
+  .menu a:hover {
+      color: azure;
+      text-decoration: overline;
+     
+  }
+
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 2px 0px;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul li a::before {
+
+    display: block;
+    content: " " ;
+    width: 0;
+    background: rgb(0, 0, 0) ;
+    height: 5px;
+    top: 0 ;
+    position: relative;
+    transition: width 0.5s ;
+
+}
+
+nav ul li a:hover::before {
+
+    width: 100%;
+
+}
+
+.introduccion {
+
+    background: #f5cdaa;
+
+}
+
+.slider {
+
+    background: #e2b084;
+    width: 100%;
+    height: 100;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slider ul {
+
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s  infinite alternate;
+
+}
+
+.slider li {
+
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+
+    width: 100%;
+
+}
+
+@keyframes cambio {
+
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+    105% {margin-left: -400%;}
+    125% {margin-left: -400%;}
+
+    130% {margin-left: -500%;}
+    150% {margin-left: -500%;}
+
+    155% {margin-left: -600%;}
+    175% {margin-left: -600%;}
+
+    180% {margin-left: -700%;}
+    200% {margin-left: -700%;}
+
+
+}
+
+.modi {
+
+    background: #e2b084;
+
+}
+
+*.suspen {
+
+    right: 100px;
+    position: absolute;
+    top: 1600px;
+    height: 300px;
+    width: 300px;
+
+    
+}
